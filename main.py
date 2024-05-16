@@ -34,6 +34,16 @@ async def ip(ctx):
     )
     await ctx.send(embed=embed)
 
+# Command version
+@bot.command()
+async def version(ctx):
+    embed = discord.Embed(
+        title='SERVER-NAME',
+        description='SERVER-VERSION',
+        color=discord.Color.blue()
+    )
+    await ctx.send(embed=embed)
+
 # Say System
 @bot.command()
 async def say(ctx, *, message):
